@@ -1,0 +1,12 @@
+global using NUnit.Framework;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.EntityFrameworkCore;
+global using Moq;
+global using Playlist.Api.Data;
+global using Playlist.Api.Entities;
+global using Playlist.Api.Repositories;
+global using Playlist.Api.Services;
+global using Playlist.Api.Controllers;
+global using Playlist.Api.Entities.Dtos;
+global using Playlist.Api.Profiles;
+global using Shouldly;
