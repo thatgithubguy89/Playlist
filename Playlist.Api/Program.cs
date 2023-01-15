@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Playlist.Api.Data;
 using Playlist.Api.Extensions;
 using Playlist.Api.Profiles;
@@ -11,7 +12,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 );
 builder.Services.AddMemoryCache();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerExtension();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddAuthenticationExtension(builder.Configuration);
